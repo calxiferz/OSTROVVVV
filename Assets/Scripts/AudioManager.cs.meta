@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 0968ac43457e5bd459815d14c9fe345c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - musicSource: {instanceID: 0}
+  - sfxSource: {instanceID: 0}
+  - backgroundMusic: {fileID: 8300000, guid: 8781b6a96db1eea4890d07fd41a6edf6, type: 3}
+  - jumpSFX: {fileID: 8300000, guid: 8f5d42c298b09fc46842df74a0fe6499, type: 3}
+  - collectibleSFX: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

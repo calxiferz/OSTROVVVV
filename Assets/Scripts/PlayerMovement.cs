@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,15 +9,16 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckDistance = .12f;
     public Vector2 groundCheckOffset = new Vector2(0f, -.5f); //moves perpendecular line
     public LayerMask groundLayer;
+    public float runSpeed = 9f;
 
     private Rigidbody2D rb; //physics
     private float horizInput; //z axis
     private bool isGrounded; //is on ground
+    private bool runPressed;
     private SpriteRenderer spriteRenderer; //sees if sprite is rendered
 
     private Animator animator;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); //links with the rigidbody in unity scene
@@ -33,25 +35,33 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, groundCheckDistance, groundLayer);
         isGrounded = hit.collider != null;
 
-        if(Input.GetButtonDown ("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
-        if(spriteRenderer!=null)
+        if (spriteRenderer != null)
         {
-            if (horizInput > .1f) spriteRenderer.flipX = true;
-            else if (horizInput < .1f) spriteRenderer.flipX = false;
+            if (horizInput < .1f) spriteRenderer.flipX = true;
+            else if (horizInput > .1f) spriteRenderer.flipX = false;
         }
 
-        if(animator != null)
+        if (animator != null)
         {
             animator.SetFloat("moveInput", Mathf.Abs(horizInput));
             animator.SetBool("isGrounded", isGrounded);
 
         }
 
-
+        float currentSpeed = runPressed ? runSpeed : speed;
     }
+
+    
+        public void OnRun (UnityEngine.InputSystem.InputValue value)
+    {
+        runPressed = value.isPressed; 
+    }    
+
+    
 
     void FixedUpdate()
     {
