@@ -1,83 +1,141 @@
-using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 8f; //speed of player movement z axis
-    public float jumpForce = 12f; // how much itll jump y axis
-    public Transform groundCheck; // check it if its grounded so it wont jump alot
-    public float groundCheckDistance = .12f;
-    public Vector2 groundCheckOffset = new Vector2(0f, -.5f); //moves perpendecular line
+    public Rigidbody2D rb;
+    public PlayerInput playerInput;
+
+    [Header("Movement Variables")]
+    public float speed;
+    public float jumpForce;
+    public float jumpCutMultiplier = .5f;
+    public float normalGravity;
+    public float fallGravity;
+    public float jumpGravity;
+
+    public int facingDirection = 1;
+
+    //Inputs 
+    private Vector2 moveInput;
+    private bool jumpPressed;
+    private bool jumpReleased;
+
+
+    [Header("Ground Check")]
+    public Transform groundCheck;
+    public float groundCheckRadius;
     public LayerMask groundLayer;
-    public float runSpeed = 9f;
+    private bool isGrounded;
 
-    private Rigidbody2D rb; //physics
-    private float horizInput; //z axis
-    private bool isGrounded; //is on ground
-    private bool runPressed;
-    private SpriteRenderer spriteRenderer; //sees if sprite is rendered
-
-    private Animator animator;
-
-    void Start()
+    private void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); //links with the rigidbody in unity scene
-        spriteRenderer = GetComponent<SpriteRenderer>(); // links with the sprite renderer in unity scene
-        animator = GetComponent<Animator>();
+        rb.gravityScale = normalGravity;
     }
 
-    // Update is called once per frame
+
+
+
     void Update()
     {
-        horizInput = Input.GetAxisRaw("Horizontal"); //horizin. gets the unity premade thingy
-
-        Vector2 rayOrigin = groundCheck != null ? (Vector2)groundCheck.position : (Vector2)transform.position + groundCheckOffset;
-        RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, groundCheckDistance, groundLayer);
-        isGrounded = hit.collider != null;
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
-        if (spriteRenderer != null)
-        {
-            if (horizInput < .1f) spriteRenderer.flipX = true;
-            else if (horizInput > .1f) spriteRenderer.flipX = false;
-        }
-
-        if (animator != null)
-        {
-            animator.SetFloat("moveInput", Mathf.Abs(horizInput));
-            animator.SetBool("isGrounded", isGrounded);
-
-        }
-
-        float currentSpeed = runPressed ? runSpeed : speed;
+        Flip();
     }
 
-    
-        public void OnRun (UnityEngine.InputSystem.InputValue value)
-    {
-        runPressed = value.isPressed; 
-    }    
-
-    
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(horizInput * speed, rb.linearVelocity.y);
+        ApplyVariableGravity();
+        CheckGrounded();
+        HandleMovement();
+        HandleJump();
     }
-void OnDrawGizmosSelected()
+
+
+    private void HandleMovement()
     {
-        if (groundCheck != null)
+        float targetSpeed = moveInput.x * speed;
+        rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
+    }
+
+    private void HandleJump()
+    {
+        if(jumpPressed && isGrounded)
         {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(groundCheck.position, groundCheck.position + Vector3.down * groundCheckDistance);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpPressed = false;
+            jumpReleased = false; 
+        }
+        if (jumpReleased)
+        {
+            if (rb.linearVelocity.y > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
+            }
+            jumpReleased = false;
+        }
+    }
+
+    void ApplyVariableGravity()
+    {
+        if(rb.linearVelocity.y < -0.1f) //falling
+        {
+            rb.gravityScale = fallGravity;
+        }
+        else if (rb.linearVelocity.y > 0.1f) //rising
+        {
+            rb.gravityScale = jumpGravity;
         }
         else
         {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position + (Vector3)groundCheckOffset, transform.position + (Vector3)groundCheckOffset + Vector3.down * groundCheckDistance);
+            rb.gravityScale = normalGravity;
         }
+    }
+
+    void CheckGrounded()
+    {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+    }
+    void Flip()
+    {
+        if (moveInput.x > 0.1f)
+        {
+            facingDirection = 1;
+        }
+        else if (moveInput.x < -0.1f)
+        {
+            facingDirection = -1;
+        }
+
+        transform.localScale = new Vector3(facingDirection, 1, 1);
+    }
+
+
+
+
+
+
+
+    public void OnMove (InputValue value)
+    {
+        moveInput = value.Get<Vector2>();
+    }
+
+    public void OnJump (InputValue value)
+    {
+        if(value.isPressed)
+        {
+          jumpPressed = true;
+          jumpReleased = false;
+        }
+        else //button is released
+        {
+            jumpReleased = true;
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 }

@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 7fb173a896be1ff428cf07de95023bdb
+guid: 1e980ffd1e26e82499a0ee11abcde738
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -98634441097376502
-    second: Jump (1)_0
+      213: -8378879195836208489
+    second: WalkMC (1)_0
   - first:
-      213: -8566813157544426095
-    second: Jump (1)_1
+      213: -6621832288709941960
+    second: WalkMC (1)_1
   - first:
-      213: -6933543353270212472
-    second: Jump (1)_2
+      213: 6823029561076556679
+    second: WalkMC (1)_2
   - first:
-      213: -8604051439405153755
-    second: Jump (1)_3
+      213: 306183012157015490
+    second: WalkMC (1)_3
+  - first:
+      213: 8343342071265295212
+    second: WalkMC (1)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +125,35 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump (1)_0
+      name: WalkMC (1)_0
       rect:
         serializedVersion: 2
         x: 9
         y: 0
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79aa54cb3cd38bb80800000000000000
+      internalID: -8378879195836208489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkMC (1)_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1
         width: 29
-        height: 44
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0d85c79f7491aef0800000000000000
-      internalID: -98634441097376502
+      spriteID: 8356b3d0e968a14a0800000000000000
+      internalID: -6621832288709941960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump (1)_1
+      name: WalkMC (1)_2
       rect:
         serializedVersion: 2
-        x: 58
-        y: 0
-        width: 30
-        height: 42
+        x: 106
+        y: 1
+        width: 29
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1950c6772d09c1980800000000000000
-      internalID: -8566813157544426095
+      spriteID: 78325ff5c3540be50800000000000000
+      internalID: 6823029561076556679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump (1)_2
+      name: WalkMC (1)_3
       rect:
         serializedVersion: 2
-        x: 105
+        x: 155
         y: 0
-        width: 30
-        height: 44
+        width: 29
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 888ee814e0b17cf90800000000000000
-      internalID: -6933543353270212472
+      spriteID: 2c5c0ebc3d7cf3400800000000000000
+      internalID: 306183012157015490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump (1)_3
+      name: WalkMC (1)_4
       rect:
         serializedVersion: 2
-        x: 146
-        y: 0
+        x: 202
+        y: 2
         width: 28
-        height: 43
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52241155dc4489880800000000000000
-      internalID: -8604051439405153755
+      spriteID: c6bf65da86189c370800000000000000
+      internalID: 8343342071265295212
       vertices: []
       indices: 
       edges: []
@@ -223,10 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Jump (1)_0: -98634441097376502
-      Jump (1)_1: -8566813157544426095
-      Jump (1)_2: -6933543353270212472
-      Jump (1)_3: -8604051439405153755
+      WalkMC (1)_0: -8378879195836208489
+      WalkMC (1)_1: -6621832288709941960
+      WalkMC (1)_2: 6823029561076556679
+      WalkMC (1)_3: 306183012157015490
+      WalkMC (1)_4: 8343342071265295212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
