@@ -39,7 +39,6 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-
     void Update()
     {
         Flip();
