@@ -1349,7 +1349,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   rb: {fileID: 1000913532}
   playerInput: {fileID: 1000913541}
-  speed: 8
+  anim: {fileID: 1000913537}
+  walkSpeed: 8
+  runSpeed: 12
   jumpForce: 15
   jumpCutMultiplier: 0.5
   normalGravity: 6

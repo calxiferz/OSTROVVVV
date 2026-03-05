@@ -3,11 +3,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Components")]
     public Rigidbody2D rb;
     public PlayerInput playerInput;
+    public Animator anim;
 
     [Header("Movement Variables")]
-    public float speed;
+    public float walkSpeed;
+    public float runSpeed = 8;
     public float jumpForce;
     public float jumpCutMultiplier = .5f;
     public float normalGravity;
@@ -18,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Inputs 
     private Vector2 moveInput;
+    private bool runPressed;
     private bool jumpPressed;
     private bool jumpReleased;
 
@@ -39,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Flip();
+        HandleAnimations();
     }
 
 
@@ -53,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-        float targetSpeed = moveInput.x * speed;
+        float currentSpeed = runPressed ? runSpeed : walkSpeed;
+        float targetSpeed = moveInput.x * currentSpeed;
         rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
     }
 
@@ -95,6 +101,22 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
+
+
+    void HandleAnimations()
+    {
+        anim.SetBool("isJumping", rb.linearVelocity.y > .1f);
+        anim.SetBool("isGrounded", isGrounded);
+
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
+
+        bool isMoving = Mathf.Abs(moveInput.x) > .1f && isGrounded;
+
+        anim.SetBool("isIdle",!isMoving && isGrounded);
+        anim.SetBool("isWalking", isMoving && !runPressed);
+        anim.SetBool("isRunning", isMoving && runPressed);
+    }
+
     void Flip()
     {
         if (moveInput.x > 0.1f)
@@ -118,6 +140,11 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove (InputValue value)
     {
         moveInput = value.Get<Vector2>();
+    }
+
+    public void OnRun (InputValue value)
+    {
+        runPressed = value.isPressed; 
     }
 
     public void OnJump (InputValue value)
