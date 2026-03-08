@@ -33,6 +33,9 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     private bool isGrounded;
 
+    [Header("Crouch Check")]
+    public Transform headCheck;
+    public float headCheckRadius = .2f;
 
     [Header("Slide Settings")]
     public float slideDuration = .6f;
@@ -59,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        TryStandUp();
+
         if(!isSliding)
            Flip();
 
@@ -116,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 isSliding = false;
                 slideStopTimer = slideStopDuration;
-                SetColliderNormal();
+                TryStandUp();
             }
         }
 
@@ -142,7 +147,27 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void TryStandUp()
+    {
+        if(isSliding)
+        {
+            anim.SetBool("isCrouching", false);
+            return;
+        }
 
+        bool shouldCrouch = moveInput.y <= -.1f || Physics2D.OverlapCircle(headCheck.position, headCheckRadius, groundLayer);
+
+        if (!shouldCrouch)
+        {
+            SetColliderNormal();
+            anim.SetBool("isCrouching", false);
+        }
+        else
+        {
+            SetColliderSlide();
+            anim.SetBool("isCrouching", true);
+        }
+    }
 
     void SetColliderNormal()
     {
@@ -180,6 +205,8 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleAnimations()
     {
+        bool isCrouching = anim.GetBool("isCrouching");
+
         anim.SetBool("isSliding", isSliding);
         anim.SetBool("isJumping", rb.linearVelocity.y > .1f);
         anim.SetBool("isGrounded", isGrounded);
@@ -188,9 +215,9 @@ public class PlayerMovement : MonoBehaviour
 
         bool isMoving = Mathf.Abs(moveInput.x) > .1f && isGrounded;
 
-        anim.SetBool("isIdle",!isMoving && isGrounded && !isSliding);
-        anim.SetBool("isWalking", isMoving && !runPressed && !isSliding);
-        anim.SetBool("isRunning", isMoving && runPressed && !isSliding);
+        anim.SetBool("isIdle",!isMoving && isGrounded && !isSliding && !isCrouching);
+        anim.SetBool("isWalking", isMoving && !runPressed && !isSliding && !isCrouching);
+        anim.SetBool("isRunning", isMoving && runPressed && !isSliding && !isCrouching);
     }
 
     void Flip()
@@ -235,5 +262,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(headCheck.position, headCheckRadius);
     }
 }
