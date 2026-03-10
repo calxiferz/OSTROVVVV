@@ -1321,13 +1321,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000913530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3fbe8723c804854685e238999aa17c0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f805be369a5dcf42b2ac7b6dbfc8035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 100
   invulnerabilityDuration: 1
   blinkInterval: 0.1
-  healthSlider: {fileID: 0}
 --- !u!81 &1000913539
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1360,13 +1359,18 @@ MonoBehaviour:
   fallGravity: 9
   jumpGravity: 4
   facingDirection: 1
+  moveInput: {x: 0, y: 0}
+  runPressed: 0
+  jumpPressed: 0
+  jumpReleased: 0
   groundCheck: {fileID: 1965567147}
   groundCheckRadius: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  isGrounded: 1
   headCheck: {fileID: 1012629495}
-  headCheckRadius: 0.6
+  headCheckRadius: 0.4
   slideDuration: 0.6
   slideSpeed: 12
   slideStopDuration: 0.15
