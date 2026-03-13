@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
     public PlayerMoveState moveState;  
     public PlayerCrouchState crouchState;
     public PlayerSlideState slideState;
+    public PlayerAttackState attackState;
+
+    [Header("Core Components")]
+    public Combat combat;
 
     [Header("Components")]
     public Rigidbody2D rb;
@@ -34,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     public bool runPressed;
     public bool jumpPressed;
     public bool jumpReleased;
+    public bool attackPressed;
 
 
     [Header("Ground Check")]
@@ -68,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         moveState = new PlayerMoveState(this);
         crouchState = new PlayerCrouchState(this);
         slideState = new PlayerSlideState(this);
+        attackState = new PlayerAttackState(this);
     }
 
 
@@ -164,6 +170,10 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = new Vector3(facingDirection, 1, 1);
     }
 
+    public void AttackAnimationFinished()
+    {
+        currentState.AttackAnimationFinished();
+    }
 
     public void OnMove (InputValue value)
     {
@@ -173,6 +183,11 @@ public class PlayerMovement : MonoBehaviour
     public void OnRun (InputValue value)
     {
         runPressed = value.isPressed; 
+    }
+
+    public void OnAttack(InputValue value)
+    {
+        attackPressed = value.isPressed;
     }
 
     public void OnJump (InputValue value)
