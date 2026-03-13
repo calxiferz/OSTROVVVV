@@ -12,13 +12,13 @@ public class SceneAudioController : MonoBehaviour
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "MenuScene") // Replace with your scene name
+        if (scene.name == "Level0")
         {
-            AudioManager.Instance.musicSource.Stop();
+            AudioManager1.Instance.musicSource.Stop();
         }
         else
         {
-            AudioManager.Instance.musicSource.Play();
+            AudioManager1.Instance.musicSource.Play();
         }
     }
 }

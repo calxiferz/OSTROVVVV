@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9983489bd1a73aa49818033858aa89ee
+guid: 6b28f08bbcb3e8d4ab71bb8f20d276f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6918136288605672176
-    second: HitFX6_0
+      213: -7776323709462021558
+    second: Idle(NoArmor)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HitFX6_0
+      name: Dummy_Head
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 48
-        height: 48
+        x: 20
+        y: 24
+        width: 9
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01d6be903b7ddff90800000000000000
-      internalID: -6918136288605672176
+      spriteID: a4a711779c2f41490800000000000000
+      internalID: -7776323709462021558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dummy_Shield
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 15
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2251defeb0589049a2b02e720208a12
+      internalID: 281803878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dummy_Sword
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 18
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da6c292dffb5d044a757a91f7cf2c54
+      internalID: 149535731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dummy_Body
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 10
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7130d3520aa1a1f4188e3a62250b6b6f
+      internalID: -1037131420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dummy_Stand
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dda616b4c482c6479fc6851107d8dd5
+      internalID: 1784027230
       vertices: []
       indices: 
       edges: []
@@ -138,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +236,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HitFX6_0: -6918136288605672176
+      Dummy_Body: -1037131420
+      Dummy_Head: -7776323709462021558
+      Dummy_Shield: 281803878
+      Dummy_Stand: 1784027230
+      Dummy_Sword: 149535731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

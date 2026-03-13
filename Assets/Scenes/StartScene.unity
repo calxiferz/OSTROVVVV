@@ -1188,8 +1188,8 @@ GameObject:
   - component: {fileID: 1282639634}
   - component: {fileID: 1282639636}
   - component: {fileID: 1282639635}
-  - component: {fileID: 1282639638}
   - component: {fileID: 1282639637}
+  - component: {fileID: 1282639638}
   m_Layer: 0
   m_Name: AudioManager_Menu
   m_TagString: Untagged
@@ -1427,11 +1427,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1282639630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0968ac43457e5bd459815d14c9fe345c, type: 3}
+  m_Script: {fileID: 11500000, guid: 885b31c3c378169419103b3ea4f431a1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  musicSource: {fileID: 1282639636}
-  sfxSource: {fileID: 1282639635}
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager1
+  musicSource: {fileID: 1282639635}
+  sfxSource: {fileID: 1282639636}
   backgroundMusic: {fileID: 8300000, guid: 244137f6d861d864c8a3ff611daa72ef, type: 3}
   jumpSFX: {fileID: 0}
   collectibleSFX: {fileID: 0}

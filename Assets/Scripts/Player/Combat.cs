@@ -8,6 +8,7 @@ public class Combat : MonoBehaviour
     public float attackCooldown = 1.5f;
     public Transform attackPoint;
     public LayerMask enemyLayer;
+    public Animator hitFX;
 
     public PlayerMovement player;
 
@@ -34,6 +35,7 @@ public class Combat : MonoBehaviour
 
         if (enemy != null)
         {
+            hitFX.Play("HitFX");
             enemy.gameObject.GetComponent<Health>().ChangeHealth(-damage);
         }
     }
