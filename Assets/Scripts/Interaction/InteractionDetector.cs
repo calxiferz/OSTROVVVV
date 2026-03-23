@@ -14,9 +14,8 @@ public class InteractionDetector : MonoBehaviour
 
     public void OnInteract(Collider2D collision)
     {
-        if(collision.TryGetComponent<PlayerInput>(out var input))
+        if(Input.GetButtonDown("Interact"))
         {
-            playerInput = input;
                 interactableInRange?.Interact();
         }
     }
