@@ -12,17 +12,14 @@ public class InteractionDetector : MonoBehaviour
         interactionIcon.SetActive(false);
     }
 
-    public void OnInteract(Collider2D collision)
+    public void OnInteract()
     {
-        if(Input.GetButtonDown("Interact"))
-        {
-                interactableInRange?.Interact();
-        }
+            interactableInRange?.Interact();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
+        if (collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
         {
             interactableInRange = interactable;
             interactionIcon.SetActive(true);
