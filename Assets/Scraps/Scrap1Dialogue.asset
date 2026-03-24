@@ -20,12 +20,10 @@ MonoBehaviour:
     of the incoming project \u201COil deposits\u201D.  "
   - "Android 394\u2019s purpose is to scan the North-Western Area. Subject must not
     stray from objective. Self-destruct when necessary. "
-  - .
-  - .
-  - .
+  - . . .
   - "Android 394 wishes to initialize self-destruct, entered cod .  ee. . AN \u2588\u2588\u2588\u2588\u2588\u2588 "
-  autoProgressLines: 01010101010100
+  autoProgressLines: 0101010101
   autoProgressDelay: 1.5
-  typingSpeed: 0.5
+  typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: f837d580fe050ab44a19b4dda13c32f1, type: 3}
-  voicePitch: 1
+  voicePitch: 20
