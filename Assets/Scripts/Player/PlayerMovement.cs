@@ -1,9 +1,12 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance { get; private set; }
+
     public PlayerState currentState;
 
     public PlayerIdleState idleState;   
@@ -201,6 +204,11 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpReleased = true;
         }
+    }
+
+    public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)
+    {
+       
     }
 
     private void OnDrawGizmosSelected()

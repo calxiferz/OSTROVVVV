@@ -91,6 +91,5 @@ public class NPC : MonoBehaviour, IInteractable
         isDialogueActive = false;
         dialogueText.SetText("");
         dialoguePanel.SetActive(false);
-        Destroy(gameObject);
     }
 }
