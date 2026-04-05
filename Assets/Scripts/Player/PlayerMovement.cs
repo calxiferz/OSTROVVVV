@@ -206,11 +206,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)
-    {
-       
-    }
-
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
