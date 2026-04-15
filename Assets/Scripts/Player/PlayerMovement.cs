@@ -67,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isSliding;
 
 
-
     private void Awake()
     {
         idleState = new PlayerIdleState(this);

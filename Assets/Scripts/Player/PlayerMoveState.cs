@@ -4,7 +4,6 @@ public class PlayerMoveState : PlayerState
 {
     public PlayerMoveState(PlayerMovement player) : base(player) { }
 
-
     public override void Enter()
     {
         base.Enter();
