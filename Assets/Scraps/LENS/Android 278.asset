@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa3d8d521a62a3449cc6f6cc8e4bc02, type: 3}
+  m_Name: Android 278
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Android 278 Visual Recording
+  npcPortrait: {fileID: -7527145504033472756, guid: bb42bd1a868c3c245843349a9ded47ee, type: 3}
+  dialogueLines: []
+  autoProgressLines: 
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: f837d580fe050ab44a19b4dda13c32f1, type: 3}
+  voicePitch: 1

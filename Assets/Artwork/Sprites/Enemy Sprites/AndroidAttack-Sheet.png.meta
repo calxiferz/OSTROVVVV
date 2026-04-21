@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 77931f83f6c027045a54f2f3f0233672
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8186982583355988290
+    second: AndroidAttack-Sheet_0
+  - first:
+      213: -3024546924870074950
+    second: AndroidAttack-Sheet_1
+  - first:
+      213: 3460022924248733387
+    second: AndroidAttack-Sheet_2
+  - first:
+      213: -1461623559965579692
+    second: AndroidAttack-Sheet_3
+  - first:
+      213: -2148568958439567205
+    second: AndroidAttack-Sheet_4
+  - first:
+      213: -5855112711086050605
+    second: AndroidAttack-Sheet_5
+  - first:
+      213: 2190993772685956479
+    second: AndroidAttack-Sheet_6
+  - first:
+      213: -4386371914319570402
+    second: AndroidAttack-Sheet_7
+  - first:
+      213: 2697988816831082807
+    second: AndroidAttack-Sheet_8
+  - first:
+      213: -6299552890419146414
+    second: AndroidAttack-Sheet_9
+  - first:
+      213: -6900715714343376973
+    second: AndroidAttack-Sheet_10
+  - first:
+      213: 3308404391327686831
+    second: AndroidAttack-Sheet_11
+  - first:
+      213: -888409836412498725
+    second: AndroidAttack-Sheet_12
+  - first:
+      213: 1507380016519641970
+    second: AndroidAttack-Sheet_13
+  - first:
+      213: -5982866494928864532
+    second: AndroidAttack-Sheet_14
+  - first:
+      213: 1591452713049699361
+    second: AndroidAttack-Sheet_15
+  - first:
+      213: 3414965131679672730
+    second: AndroidAttack-Sheet_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 22
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2495e3778410e9170800000000000000
+      internalID: 8186982583355988290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 27
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd7e98b896a606d0800000000000000
+      internalID: -3024546924870074950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 46
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6dd828488740030800000000000000
+      internalID: 3460022924248733387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 16
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456e8e0cd1547bbe0800000000000000
+      internalID: -1461623559965579692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 46
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9057c87aefbe22e0800000000000000
+      internalID: -2148568958439567205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d277dfc2067ebea0800000000000000
+      internalID: -5855112711086050605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 46
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f751a065a39f76e10800000000000000
+      internalID: 2190993772685956479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a5b32ebf97023c0800000000000000
+      internalID: -4386371914319570402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 46
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731713bc88e217520800000000000000
+      internalID: 2697988816831082807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 14
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25118cac50e7398a0800000000000000
+      internalID: -6299552890419146414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b76b9e8e9bbb30a0800000000000000
+      internalID: -6900715714343376973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0ed66e340d9ed20800000000000000
+      internalID: 3308404391327686831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 0
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc8ba5f5fbbba3f0800000000000000
+      internalID: -888409836412498725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 6
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bfc2a732a4be410800000000000000
+      internalID: 1507380016519641970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceabd271f9698fca0800000000000000
+      internalID: -5982866494928864532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124b8268fc9f51610800000000000000
+      internalID: 1591452713049699361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AndroidAttack-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99ac1aa1b4646f20800000000000000
+      internalID: 3414965131679672730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AndroidAttack-Sheet_0: 8186982583355988290
+      AndroidAttack-Sheet_1: -3024546924870074950
+      AndroidAttack-Sheet_10: -6900715714343376973
+      AndroidAttack-Sheet_11: 3308404391327686831
+      AndroidAttack-Sheet_12: -888409836412498725
+      AndroidAttack-Sheet_13: 1507380016519641970
+      AndroidAttack-Sheet_14: -5982866494928864532
+      AndroidAttack-Sheet_15: 1591452713049699361
+      AndroidAttack-Sheet_16: 3414965131679672730
+      AndroidAttack-Sheet_2: 3460022924248733387
+      AndroidAttack-Sheet_3: -1461623559965579692
+      AndroidAttack-Sheet_4: -2148568958439567205
+      AndroidAttack-Sheet_5: -5855112711086050605
+      AndroidAttack-Sheet_6: 2190993772685956479
+      AndroidAttack-Sheet_7: -4386371914319570402
+      AndroidAttack-Sheet_8: 2697988816831082807
+      AndroidAttack-Sheet_9: -6299552890419146414
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
