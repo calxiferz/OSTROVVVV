@@ -13,11 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public PlayerJumpState jumpState;
     public PlayerMoveState moveState;  
     public PlayerCrouchState crouchState;
+    public PlayerDamagedState damagedState;
     public PlayerSlideState slideState;
     public PlayerAttackState attackState;
 
     [Header("Core Components")]
     public Combat combat;
+    public Damage damage;
 
     [Header("Components")]
     public Rigidbody2D rb;
@@ -73,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         jumpState = new PlayerJumpState(this);  
         moveState = new PlayerMoveState(this);
         crouchState = new PlayerCrouchState(this);
+        damagedState = new PlayerDamagedState(this);
         slideState = new PlayerSlideState(this);
         attackState = new PlayerAttackState(this);
     }

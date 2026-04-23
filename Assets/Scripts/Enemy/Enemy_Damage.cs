@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy_Damage : MonoBehaviour
 {
-    public Animator anim;
+    [SerializeField] private Enemy enemy;
     public Health health;
 
     [Header("Death FX")]
@@ -25,9 +25,12 @@ public class Enemy_Damage : MonoBehaviour
     }
 
 
-    void HandleDamage()
+    void HandleDamage(Vector2 sourcePosition)
     {
-        anim.SetTrigger("isDamaged");
+        int knockbackDir = 0;
+        knockbackDir = transform.position.x > sourcePosition.x ? 1 : -1;
+
+        enemy.StateMachine.ChangeState(new DamagedState(enemy, knockbackDir));
     }
 
     void HandleDeath()

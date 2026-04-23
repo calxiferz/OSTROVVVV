@@ -14,11 +14,27 @@ public class SceneAudioController : MonoBehaviour
     {
         if (scene.name == "Level0")
         {
-            AudioManager1.Instance.musicSource.Stop();
+            AudioManager.Instance.musicSource.Stop();
         }
         else
         {
-            AudioManager1.Instance.musicSource.Play();
+            AudioManager.Instance.musicSource.Play();
+        }
+        if (scene.name == "Level1")
+        {
+            AudioManager.Instance.musicSource.Stop();
+        }
+        else
+        {
+            AudioManager.Instance.musicSource.Play();
+        }
+        if (scene.name == "Level2")
+        {
+            AudioManager.Instance.musicSource.Stop();
+        }
+        else
+        {
+            AudioManager.Instance.musicSource.Play();
         }
     }
 }

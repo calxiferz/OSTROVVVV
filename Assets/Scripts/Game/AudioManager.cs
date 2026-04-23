@@ -1,19 +1,19 @@
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
+    [SerializeField] private Slider sfxSlider;
 
     [Header("Audio Sources")]
 
     public AudioSource musicSource;
-    public AudioSource sfxSource;
 
     [Header("AudioClips")]
 
     public AudioClip backgroundMusic;
-    public AudioClip jumpSFX;
-    public AudioClip collectibleSFX;
 
 
     
@@ -35,23 +35,6 @@ public class AudioManager : MonoBehaviour
         if (backgroundMusic != null && musicSource != null)
         {
             musicSource.clip = backgroundMusic;
-            musicSource.loop = true;
-            musicSource.Play();
-        }
-    }
-
-    public void PlaySFX(AudioClip clip)
-    {
-        if (clip!=null && sfxSource != null)
-        {
-            sfxSource.PlayOneShot(clip);
-        }
-    }
-    public void PlayMusic(AudioClip clip)
-    {
-        if(clip != null && musicSource != null)
-        {
-            musicSource.clip = clip;
             musicSource.loop = true;
             musicSource.Play();
         }
