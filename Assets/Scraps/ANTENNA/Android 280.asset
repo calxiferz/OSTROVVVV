@@ -14,8 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
   npcName: 'Android 280 Radio Interception '
   npcPortrait: {fileID: -7527145504033472756, guid: 20a118f3fbe34b447a25b2f10c23c4dc, type: 3}
-  dialogueLines: []
-  autoProgressLines: 
+  dialogueLines:
+  - '[Static is the only thing to be heard before the playback was recovered.] '
+  - Android 278, Android 279, and Android 280. Initiate self-destruct sequence.
+  - 'Orders from the higher-ups show that this island is no longer suitable for oil
+    extraction. '
+  - 'All Androids to be subjected to self-destruct.  '
+  - 'All hope is lost.  '
+  - 'All hope is lost.  '
+  - Island is hopeless.
+  - All life.
+  - 'All vegetation.  '
+  - 'Destroyed. No sufficient resources. Island proves to no longer be needed. Unfit
+    for implantation.  '
+  - 'Self-destruct initiated.  '
+  autoProgressLines: 0101010101010101010101
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: f837d580fe050ab44a19b4dda13c32f1, type: 3}

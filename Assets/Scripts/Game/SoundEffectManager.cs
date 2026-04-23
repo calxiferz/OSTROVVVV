@@ -52,21 +52,4 @@ public class SoundEffectManager : MonoBehaviour
         voiceAudioSource.PlayOneShot(audioClip);
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        sfxSlider.onValueChanged.AddListener(delegate { OnValueChanged(); });
-    }
-
-    public static void SetVolume(float volume)
-    {
-        audioSource.volume = volume;    
-        randomPitchAudioSource.volume = volume;
-        voiceAudioSource.volume = volume;
-    }
-
-    public void OnValueChanged()
-    {
-        SetVolume(sfxSlider.value);
-    }
 }

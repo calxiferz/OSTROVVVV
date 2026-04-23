@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa3d8d521a62a3449cc6f6cc8e4bc02, type: 3}
+  m_Name: Scrap4
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: ' Android 279 Visual Recording'
+  npcPortrait: {fileID: -7527145504033472756, guid: 825e5e048a8143243b717d861dcc3cbd, type: 3}
+  dialogueLines:
+  - 'Backup Recording of Human Retrieval. Recovering now. '
+  - Android 279, do you copy?
+  - '[Android 279 is seen to be tending to a body.] '
+  - '[The body was recovered not so far from a close-by laboratory.] '
+  - '[Not so far from the laboratory explosion.]'
+  - 'Copy, I am tending to a human. I believe there is hope for recovery. '
+  - "Mr. \u2588\u2588\u2588\u2588\u2588, Please live. You\u2019ve fixed my heart
+    and my components many times. "
+  - "I\u2019ve proved to be your most loyal Android.  "
+  - 'I am your prized possession. '
+  - 'It is now my turn to fix your components.  '
+  - '. . . '
+  - Shame, why does your components look different to mine?
+  - "I will work hard to help you Mr. \u2588\u2588\u2588\u2588\u2588.  "
+  autoProgressLines: 01010101010101010101010101
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: f837d580fe050ab44a19b4dda13c32f1, type: 3}
+  voicePitch: 15

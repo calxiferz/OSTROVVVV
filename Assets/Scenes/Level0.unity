@@ -7839,6 +7839,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 42750710}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: EndDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724647869}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: EndDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1469534423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72507,10 +72531,10 @@ SceneRoots:
   - {fileID: 464511955}
   - {fileID: 265549893}
   - {fileID: 42750713}
+  - {fileID: 1724647872}
   - {fileID: 1461556968}
   - {fileID: 25811414}
   - {fileID: 5110506682185893338}
   - {fileID: 1359768852}
   - {fileID: 490060767}
   - {fileID: 703594309}
-  - {fileID: 1724647872}

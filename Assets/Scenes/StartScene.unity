@@ -1109,7 +1109,7 @@ Transform:
   m_GameObject: {fileID: 949745047}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7897, y: 3.27, z: 0}
+  m_LocalPosition: {x: 5.44, y: 3.12, z: 0}
   m_LocalScale: {x: 0.70333, y: 0.558754, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1510,6 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0968ac43457e5bd459815d14c9fe345c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  sfxSlider: {fileID: 0}
   musicSource: {fileID: 1826845939}
   backgroundMusic: {fileID: 8300000, guid: 88999831af494d440b354995e2fd623d, type: 3}
 --- !u!4 &1826845942

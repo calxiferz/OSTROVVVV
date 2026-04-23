@@ -14,8 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
   npcName: Android 278 Visual Recording
   npcPortrait: {fileID: -7527145504033472756, guid: bb42bd1a868c3c245843349a9ded47ee, type: 3}
-  dialogueLines: []
-  autoProgressLines: 
+  dialogueLines:
+  - 'Backup Recording of Human Retrieval. Recovering now.  '
+  - '[Android 278 is seen to be looking at their superior.] '
+  - '[Presumably their creator.] '
+  - Android 278, Android 279, and Android 280. Tasked to scan the disaster area of
+    the Northern to Western area.
+  - And if any human is discovered. Retrieve their body if proved to be unconscious.
+  - 'Aid their injuries when proved to be alive. '
+  - 'Understood? '
+  - 'Mission accepted.  '
+  - '[Footage is disrupted. Androids are seen walking away onto a tunnel.]  '
+  autoProgressLines: 010101010101010101
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: f837d580fe050ab44a19b4dda13c32f1, type: 3}
