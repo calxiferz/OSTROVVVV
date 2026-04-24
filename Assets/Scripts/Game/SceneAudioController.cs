@@ -12,6 +12,14 @@ public class SceneAudioController : MonoBehaviour
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (scene.name == "StartScene")
+        {
+            AudioManager.Instance.musicSource.Stop();
+        }
+        else
+        {
+            AudioManager.Instance.musicSource.Play();
+        }
         if (scene.name == "Level0")
         {
             AudioManager.Instance.musicSource.Stop();
@@ -29,6 +37,14 @@ public class SceneAudioController : MonoBehaviour
             AudioManager.Instance.musicSource.Play();
         }
         if (scene.name == "Level2")
+        {
+            AudioManager.Instance.musicSource.Stop();
+        }
+        else
+        {
+            AudioManager.Instance.musicSource.Play();
+        }
+        if (scene.name == "EndScene")
         {
             AudioManager.Instance.musicSource.Stop();
         }
