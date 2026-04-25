@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa3d8d521a62a3449cc6f6cc8e4bc02, type: 3}
+  m_Name: Scrap 8
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Android 949 Radio Transmission
+  npcPortrait: {fileID: -7527145504033472756, guid: 20a118f3fbe34b447a25b2f10c23c4dc, type: 3}
+  dialogueLines:
+  - '[Static is heard before feedback of transmission turns on] '
+  - 'Final transmission. '
+  - 'The disaster of laboratories, factories, oil drilling sites, has deemed island
+    to be unsuitable.  '
+  - 'Pollution level is starting to rise as the gas continues to leak from disaster
+    sites.  '
+  - 'Unsuitable for researchers.  '
+  - "Initiate self-destruct. Entered code \u2588\u2588\u2588\u2588\u2588\u2588\u2588. "
+  autoProgressLines: 010101010101
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: f837d580fe050ab44a19b4dda13c32f1, type: 3}
+  voicePitch: 8

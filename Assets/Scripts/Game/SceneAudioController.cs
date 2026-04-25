@@ -46,11 +46,11 @@ public class SceneAudioController : MonoBehaviour
         }
         if (scene.name == "EndScene")
         {
-            AudioManager.Instance.musicSource.Stop();
+            AudioManager.Instance.musicSource.Play();
         }
         else
         {
-            AudioManager.Instance.musicSource.Play();
+            AudioManager.Instance.musicSource.Stop();
         }
     }
 }

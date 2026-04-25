@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class ScenePrompt : MonoBehaviour
 {
     public static ScenePrompt scene1;
+    [SerializeField] private string transitionTo;
     public TMP_InputField inputField;
 
     public string player_prompt;
@@ -26,7 +27,8 @@ public class ScenePrompt : MonoBehaviour
     {
         player_prompt = inputField.text;
 
-        SceneManager.LoadSceneAsync("EndScene");
+        GameManager.Instance.transitionedFromScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(transitionTo);
     }
 
 

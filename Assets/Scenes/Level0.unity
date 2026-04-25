@@ -2292,7 +2292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0968ac43457e5bd459815d14c9fe345c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sfxSlider: {fileID: 0}
   musicSource: {fileID: 703594306}
   backgroundMusic: {fileID: 8300000, guid: 88999831af494d440b354995e2fd623d, type: 3}
 --- !u!114 &703594308
@@ -2562,8 +2561,8 @@ MonoBehaviour:
   playerInput: {fileID: 1000913541}
   anim: {fileID: 1000913537}
   playerCollider: {fileID: 1000913536}
-  walkSpeed: 8
-  runSpeed: 14
+  walkSpeed: 13
+  runSpeed: 15
   jumpForce: 16
   jumpCutMultiplier: 0.5
   normalGravity: 6
@@ -7483,7 +7482,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5647059, g: 0.7647059, b: 0.58431375, a: 1}
   m_Origin: {x: -86, y: -11, z: 0}
   m_Size: {x: 98, y: 12, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}

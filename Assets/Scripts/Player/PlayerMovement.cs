@@ -92,11 +92,27 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (PauseController.IsGamePaused)
+        {
+            if(rb.linearVelocity != Vector2.zero)
+            {
+                rb.linearVelocity = Vector2.zero;
+                StopMovementAnimations();
+            }
+            return;
+        }
+
         currentState.Update();
         if(!isSliding)
            Flip();
 
         HandleAnimations();
+    }
+
+    void StopMovementAnimations()
+    {
+        anim.SetBool("isWalking", false);
+        anim.SetFloat("LastInputX", moveInput.x);
     }
 
 

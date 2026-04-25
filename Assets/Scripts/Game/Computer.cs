@@ -28,6 +28,8 @@ public class Computer : MonoBehaviour
         {
             playerInRange = true;
             promptPanel.SetActive(true);
+            PauseController.SetPause(promptPanel.activeSelf);
+   
         }
     }
 
@@ -37,7 +39,6 @@ public class Computer : MonoBehaviour
         {
             playerInRange = false;
             promptPanel.SetActive(false);
-
         }
     }
 }

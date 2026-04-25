@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa3d8d521a62a3449cc6f6cc8e4bc02, type: 3}
+  m_Name: Scrap10
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Android 1045 Data Chip
+  npcPortrait: {fileID: -7527145504033472756, guid: b4a93508a28014b4883e450f8a91159a, type: 3}
+  dialogueLines:
+  - '[Recovered Data Chip] '
+  - 'Data shows great damage to air and water quality. '
+  - 'Soil and vegetation are contaminated due to the oil spillage of destruction
+    sites. '
+  - "No organic life shown to survive after \u2588\u2588 years.  "
+  - '[End of Data Chip, rest of data are corrupted.] '
+  autoProgressLines: 0101010101
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: f837d580fe050ab44a19b4dda13c32f1, type: 3}
+  voicePitch: 1
